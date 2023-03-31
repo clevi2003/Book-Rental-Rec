@@ -8,12 +8,13 @@ def main():
 
     api = BookAPI()
 
-    # Insert new following
+    # adds book data
     api.add_book(file_name="cleanbooks.csv")
 
-    # Post a new tweet
+    # adds ratings data
     api.add_rating(file_name="cleanratings.csv")
-    print(api.get_user_ratings(8))
+    print(api.get_users_ratings(8))
+    print(api.get_users_who_rated(1552041778))
 
 
 
